@@ -50,3 +50,9 @@ There are 15 million single parents in the Philippines. 95% are women. Congress 
 
 ```bash
 rustup target add wasm32-unknown-unknown
+
+## Screenshot
+
+![Stellar transaction screenshot](transaction.png)
+
+Caption: Transaction showing contract creation on Stellar Expert.
