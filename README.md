@@ -8,11 +8,11 @@ Automated child support enforcement via Soroban smart contracts on Stellar.
 
 ## Problem
 
-Maria, a single mother in Quezon City, has a court order for ₱6,000/month child support. Her ex-husband paid twice then vanished. Filing contempt costs ₱10,000–₱50,000 with 6–18 months of he[...]
+Across the Philippines, millions of single parents — overwhelmingly mothers — live with court-ordered child support that is frequently unpaid. The defaulting parent simply vanishes or stops paying, knowing that legal enforcement requires costly, time-consuming contempt proceedings that can take 6–18 months and cost ₱10,000–₱50,000. As a result, children miss meals, drop out of school, and families fall deeper into poverty — not because a court order doesn't exist, but because there is no automated, affordable way to enforce it.
 
 ## Solution
 
-A Family Court deploys a Soroban smart contract that auto-transfers the court-ordered child support from the paying parent's Stellar wallet to the custodial parent's GCash every month. If the parent d[...]
+A Family Court deploys a Soroban smart contract that executes the support order as code. Every month on the due date, the contract automatically transfers the court-ordered amount (in USDC) from the paying parent's Stellar wallet to the custodial parent's GCash wallet. If the wallet has insufficient funds, the contract records an immutable on‑chain default and alerts the court — no lawyer, no filing fee, no delay. The enforcement is automatic, transparent, and unstoppable.
 
 ## Deployment
 
@@ -34,16 +34,16 @@ A Family Court deploys a Soroban smart contract that auto-transfers the court-or
 
 ## Stellar Features Used
 
-- **USDC transfers** — stable Philippine Peso-equivalent monthly support payments
+- **USDC transfers** — stable Philippine Peso‑equivalent monthly support payments
 - **Soroban smart contracts** — payment schedule, default detection, compliance score
 - **Passkey support** — fingerprint onboarding, zero crypto knowledge needed
 - **GCash/Maya off-ramp** — funds land in existing mobile wallets
 - **3–5 second settlement** — support arrives same day
-- **Sub-cent fees** — ₱6,000 transfer costs less than ₱0.01
+- **Sub‑cent fees** — ₱6,000 transfer costs less than ₱0.01
 
 ## Vision and Purpose
 
-There are 15 million single parents in the Philippines. 95% are women. Congress is debating a Child Support Enforcement Act (HB 44, HB 8987) with penalties up to 12 years imprisonment — but there is[...]
+The Philippines has 15 million single parents, 95% of them women. Congress is debating a Child Support Enforcement Act (HB 44, HB 8987) with penalties up to 12 years imprisonment — yet no automated enforcement infrastructure exists. SupportChain is that missing infrastructure: a court order turned into self‑executing code on Stellar, giving custodial parents what they deserve — reliable support without fighting the system.
 
 ## Prerequisites
 
@@ -52,5 +52,4 @@ There are 15 million single parents in the Philippines. 95% are women. Congress 
 
 ```bash
 rustup target add wasm32-unknown-unknown
-
 ```
